@@ -1,0 +1,29 @@
+.section2 {
+  padding-top: 3rem;
+
+  .section2__content {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: $font-primary-regular !important;
+  }
+
+  &__text {
+    width: 90%;
+    margin: 1rem 0 !important;
+  }
+
+  &__icon1 {
+    width: 4rem !important;
+  }
+
+  &__icon3 {
+    width: 2.5rem !important;
+  }
+
+  .card {
+    padding: 3rem 2rem;
+  }
+}

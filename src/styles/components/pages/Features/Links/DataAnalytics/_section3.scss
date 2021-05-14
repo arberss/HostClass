@@ -1,0 +1,55 @@
+.scheduleExpert {
+  background: url('../../../../../../assets/img/components/Features/Links/laptop1.webp')
+    no-repeat;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+
+  padding: 4rem 0 6rem 0;
+  position: relative;
+
+  &::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    color: $color-white;
+    text-align: center;
+    font-size: $font-size-largest;
+    font-weight: bold;
+
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  &__button {
+    color: $color-white;
+    background-color: transparent;
+    border: 1px solid $color-white;
+    border-radius: 1rem;
+    padding: 1.2rem 4rem;
+    font-size: $font-size-normal;
+    font-weight: bold;
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 6rem;
+
+    &:hover {
+      border: 1px solid $color-grey-4;
+    }
+  }
+}

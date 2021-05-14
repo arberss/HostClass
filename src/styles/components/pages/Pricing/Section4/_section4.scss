@@ -1,0 +1,56 @@
+.pricingSec4 {
+  background: url('../../../../../assets/img/components/Pricing/image2.webp')
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__content {
+    padding: 6rem 0;
+    color: $color-white;
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: $font-size-largest;
+    font-family: $font-primary-bold;
+  }
+
+  &__text {
+    font-size: $font-size-medium;
+    width: 60%;
+    margin: 3rem auto;
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
+  }
+
+  &__btn {
+    font-size: $font-size-normal;
+    border: 1px solid $color-blue;
+
+    &:hover {
+      border: 1px solid $color-grey-3;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.pricingSec1 {
+  position: relative;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    margin-top: -4rem;
+
+    @include respond(tab-port) {
+      margin-top: 2.5rem;
+    }
+  }
+
+  &__left {
+    flex: 1.4;
+  }
+
+  &__img {
+    background-image: url('../../../../../assets/img/components/Pricing/image1.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: calc(56vw - 7rem);
+    width: 101rem;
+    height: 42rem;
+    margin-right: auto;
+
+    @include respond(tab-port) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__right {
+    flex: 1;
+
+    @include flex-center;
+  }
+
+  &__text {
+    width: 70%;
+    font-size: $font-size-extra-larger;
+    font-family: $font-primary-bold;
+    line-height: 3.4rem;
+    margin-top: 2rem;
+
+    @include respond(tab-port) {
+      width: 90%;
+      text-align: center;
+    }
+  }
+}

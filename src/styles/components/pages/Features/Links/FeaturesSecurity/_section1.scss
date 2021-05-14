@@ -1,0 +1,96 @@
+.featuresSecuritySec1 {
+  &__title {
+    margin: 4rem 0;
+    font-size: $font-size-extra-largest;
+    font-family: $font-primary-bold;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    flex: 1;
+
+    @include respond(phone) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+
+    &:not(:first-child) {
+      margin-top: 6.5rem;
+    }
+
+    @include respond(tab-port) {
+      width: 85%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
+  }
+
+  &__iconbody {
+    background-color: $color-blue;
+    padding: 0.8rem 1.4rem;
+    border-radius: 0.6rem;
+  }
+
+  &__icon {
+    color: $color-white;
+    font-size: 2.5rem;
+  }
+
+  &__text {
+    font-size: $font-size-normal;
+    margin-left: 2rem;
+    // width: 45%;
+  }
+
+  &__online {
+    margin-top: 0;
+
+    @include respond(tab-port) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__img {
+    margin-left: unset;
+  }
+
+  .lesson {
+    bottom: -8rem;
+    right: 10rem;
+
+    @include respond(phone) {
+      left: 10%;
+    }
+  }
+
+  &__bottom {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__line {
+    width: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+.partnersSec2 {
+  &__content {
+    display: flex;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      @include respond(phone) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__bgicon {
+    background-color: rgba(170, 197, 255, 0.5);
+    padding: 3rem;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  &__title {
+    font-size: $font-size-large;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+
+  &__text {
+    width: 80%;
+    font-size: $font-size-normal;
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+}

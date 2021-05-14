@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55.177" height="56.976" viewBox="0 0 55.177 56.976">
+  <defs>
+    <filter id="Icon_awesome-users" x="1" y="14.678" width="52.712" height="42.299" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2693" data-name="Group 2693" transform="translate(-201 -35)">
+    <g id="cloud" transform="translate(201 35)" opacity="0.45">
+      <path id="Path_112" data-name="Path 112" d="M41.383,37.785H11.5A11.5,11.5,0,0,1,10.7,14.822,17.226,17.226,0,0,1,42.884,10.3a13.784,13.784,0,0,1-1.5,27.488Z" transform="translate(0 -1)" fill="#4480ff"/>
+      <path id="Path_115" data-name="Path 115" d="M27.589,1A17.294,17.294,0,0,0,10.7,14.822,11.5,11.5,0,0,0,11.5,37.785h.439a1.726,1.726,0,0,1,.589-2.729l14.369-6.322a1.752,1.752,0,0,1,.7-.145Z" transform="translate(0 -1)" fill="#0755f6"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 201, 35)" filter="url(#Icon_awesome-users)">
+      <path id="Icon_awesome-users-2" data-name="Icon awesome-users" d="M5.207,12.664A3.471,3.471,0,1,0,1.736,9.192,3.474,3.474,0,0,0,5.207,12.664Zm24.3,0a3.471,3.471,0,1,0-3.471-3.471A3.474,3.474,0,0,0,29.505,12.664ZM31.241,14.4H27.77a3.461,3.461,0,0,0-2.446,1.009A7.934,7.934,0,0,1,29.4,21.342h3.58a1.734,1.734,0,0,0,1.736-1.736V17.871A3.474,3.474,0,0,0,31.241,14.4Zm-13.885,0a6.075,6.075,0,1,0-6.075-6.075A6.072,6.072,0,0,0,17.356,14.4Zm4.165,1.736h-.45a8.387,8.387,0,0,1-7.431,0h-.45a6.25,6.25,0,0,0-6.248,6.248v1.562a2.6,2.6,0,0,0,2.6,2.6h15.62a2.6,2.6,0,0,0,2.6-2.6V22.383A6.25,6.25,0,0,0,21.522,16.135ZM9.389,15.408A3.461,3.461,0,0,0,6.942,14.4H3.471A3.474,3.474,0,0,0,0,17.871v1.736a1.734,1.734,0,0,0,1.736,1.736H5.31A7.954,7.954,0,0,1,9.389,15.408Z" transform="translate(10 18.43)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

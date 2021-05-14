@@ -1,0 +1,125 @@
+.partnersSec1 {
+  padding-top: 4rem;
+
+  &__title {
+    font-size: $font-size-largest;
+    font-family: $font-primary-bold;
+    margin: 3rem 0;
+  }
+
+  &__image {
+    position: relative;
+
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__line {
+    position: absolute;
+    top: 30%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+
+    &--pin {
+      width: 2.2rem;
+      height: 2.2rem;
+      z-index: 2;
+    }
+
+    &--line1 {
+      left: 40%;
+      height: 3rem;
+
+      @include respond(phone) {
+        width: 8rem;
+        top: 22.5%;
+        left: 28%;
+        transform: rotate(-11deg);
+      }
+    }
+
+    &--line3 {
+      top: 55%;
+      left: 68%;
+      width: 25rem;
+
+      @include respond(phone) {
+        width: 12rem;
+      }
+    }
+
+    &--line5 {
+      top: 32%;
+      left: 55%;
+
+      @include respond(phone) {
+        width: 2rem;
+        top: 30%;
+        left: 60%;
+      }
+    }
+
+    &--line6 {
+      top: 29.5%;
+      left: 56%;
+      width: 5rem;
+
+      @include respond(phone) {
+        width: 4rem;
+      }
+    }
+
+    &--line7 {
+      top: 27%;
+      left: 56%;
+      width: 6rem;
+
+      @include respond(phone) {
+        width: 4rem;
+      }
+    }
+
+    &--line8 {
+      top: 36%;
+      left: 54%;
+
+      @include respond(phone) {
+        width: 1rem;
+      }
+    }
+
+    &--line9 {
+      top: 35%;
+      left: 49%;
+      width: 6rem;
+
+      @include respond(phone) {
+        width: 3rem;
+      }
+    }
+
+    &--line10 {
+      top: 31.5%;
+      left: 40%;
+      width: 24rem;
+
+      @include respond(phone) {
+        width: 14rem;
+      }
+    }
+
+    &--line4 {
+      top: 29%;
+      left: 36%;
+      width: 29rem;
+
+      @include respond(phone) {
+        width: 15rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.section4 {
+  &__left {
+    display: flex;
+    flex: 2;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__right {
+    .left {
+      &__mob {
+
+        @include respond(tab-port) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .online {
+    display: flex;
+
+    @include respond(tab-port) {
+      display: block;
+    }
+
+    &__title {
+      font-size: $font-size-extra-larger;
+      margin: 0 0 2rem 15rem;
+
+      @include respond(phone) {
+        margin: 0;
+      }
+    }
+  }
+
+  .cards {
+    margin-right: 1rem;
+    flex: unset;
+
+    &__card {
+      max-width: 38rem;
+      width: 100%;
+      &:hover {
+        .cards__icon path {
+          stroke: $color-blue !important;
+        }
+      }
+    }
+
+    &__icon {
+      width: 4rem;
+    }
+
+    &__icn {
+      &--1 {
+        path {
+          fill: transparent !important;
+          stroke: $color-black;
+        }
+      }
+    }
+
+    &__title {
+      font-size: $font-size-large;
+    }
+  }
+
+  &__right {
+    flex: 1;
+    position: relative;
+
+    .left {
+      margin-top: 5rem;
+      margin-left: 2rem;
+      position: relative;
+      &__mob {
+        width: 18rem;
+        display: block;
+      }
+    }
+
+    .lesson {
+      bottom: -4rem;
+      left: 5rem;
+
+      @include respond(tab-port) {
+        margin: 0 auto;
+        left: 2rem;
+      }
+
+      &__button {
+        background-color: $color-blue;
+      }
+
+      &__bottomtitle {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__bottom {
+        &--img {
+          position: relative;
+
+          img {
+            width: 2.2rem;
+            position: absolute;
+          }
+        }
+
+        &--img1 {
+          right: 1.2rem;
+        }
+
+        &--img2 {
+          right: 0;
+        }
+      }
+
+      &__top {
+        padding: 1rem;
+        &--img {
+          width: 3rem !important;
+          margin-right: 1rem;
+        }
+      }
+
+      &__line {
+        &--line3 {
+          width: 85%;
+        }
+
+        &--line4 {
+          width: 65%;
+        }
+        &--line5 {
+          width: 78%;
+        }
+      }
+    }
+  }
+}

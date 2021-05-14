@@ -1,0 +1,46 @@
+.collaborativeLearningSec2 {
+  padding: 6rem 0;
+  &__content {
+    display: flex;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    flex: 1;
+  }
+
+  &__info {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+
+  &__title {
+    font-size: $font-size-largest;
+    font-family: $font-primary-bold;
+    margin-top: 1rem;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-top: 4rem;
+    font-size: $font-size-medium;
+  }
+
+  &__right {
+    flex: 1;
+  }
+
+  &__img {
+    width: 62%;
+    display: block;
+    margin: 0 auto;
+  }
+}

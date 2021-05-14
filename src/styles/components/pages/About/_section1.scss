@@ -1,0 +1,41 @@
+.aboutSec1 {
+  background: url('../../../../assets/img/components/About/aboutBG.webp')
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 38rem;
+
+  position: relative;
+
+  &__box {
+    max-width: 48rem;
+    width: 100%;
+    color: $color-white;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 2rem 5rem 6rem 5rem;
+    border-radius: 2rem;
+
+    position: absolute;
+    left: 10%;
+    bottom: -8rem;
+    z-index: 2;
+
+    @include respond(phone) {
+      max-width: 35rem;
+      padding: 2rem 2rem 6rem 2rem;
+      left: 1rem;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-largest;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: $font-size-medium;
+    margin-top: 3rem;
+    line-height: 2.5rem;
+  }
+}

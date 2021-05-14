@@ -1,0 +1,436 @@
+.blogSec2 {
+  &__boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 11rem));
+    justify-content: center;
+    grid-gap: 3rem;
+  }
+
+  &__box {
+    padding: 1.2rem 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      .blogSec2__icon {
+        animation: icnRotate 0.8s ease-in-out;
+      }
+    }
+
+    &--1 {
+      border: 1px solid $color-blue;
+    }
+
+    &--2 {
+      border: 1px solid orangered;
+    }
+
+    &--3 {
+      border: 1px solid green;
+    }
+
+    &--4 {
+      border: 1px solid pink;
+    }
+
+    &--5 {
+      border: 1px solid violet;
+    }
+
+    &--active {
+      background-color: $color-blue;
+      border: 1px solid $color-blue;
+      color: $color-white;
+      transition: 0.2s ease-in;
+    }
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__name {
+    margin-top: 1rem;
+    font-size: $font-size-normal;
+  }
+
+  //   grid
+
+  .grid {
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    grid-gap: 6rem;
+    margin-top: 4rem;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+
+    .left {
+      &__inputbox {
+        width: 100%;
+        color: $color-grey-2;
+        position: relative;
+      }
+
+      &__input {
+        width: 100%;
+        padding: 1rem 3.2rem 1rem 1rem;
+        border: 1px solid $color-grey-4;
+        border-radius: 1rem;
+      }
+
+      &__icon {
+        position: absolute;
+        top: 1rem;
+        right: 1.2rem;
+        font-size: $font-size-medium;
+      }
+
+      .topBox {
+        padding: 1.5rem 1rem;
+        border: 1px solid $color-grey-4;
+        border-radius: 1rem;
+        margin-top: 2rem;
+
+        @include respond(phone) {
+          text-align: center;
+        }
+
+        &__content {
+          @include respond(phone) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            justify-content: center;
+            grid-gap: 0 2rem;
+          }
+        }
+
+        &__toptitle {
+          font-size: $font-size-large;
+          font-family: $font-primary-bold;
+        }
+
+        &__box {
+          display: flex;
+          margin-top: 2rem;
+          padding-bottom: 2rem;
+          position: relative;
+
+          &:not(:first-child) {
+            margin-top: 3rem;
+          }
+
+          @include respond(phone) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+
+          &:not(:last-child)::before {
+            content: '';
+
+            width: 100%;
+            height: 1px;
+            background-color: $color-grey-3;
+
+            position: absolute;
+            bottom: 0;
+          }
+        }
+
+        &__right {
+          padding-left: 5px;
+
+          @include respond(phone) {
+            width: 100%;
+          }
+        }
+
+        &__img {
+          width: 6rem;
+          height: auto;
+          border-radius: 1rem;
+
+          @include respond(phone) {
+            width: 8rem;
+            height: fit-content;
+          }
+        }
+
+        &__title {
+          font-size: $font-size-small;
+          font-weight: bold;
+        }
+
+        &__text {
+          font-size: $font-size-extra-small;
+          margin: 0.5rem 0;
+        }
+
+        &__bottom {
+          display: flex;
+          justify-content: space-between;
+          margin-right: 1rem;
+          color: $color-grey-4;
+
+          @include respond(phone) {
+            justify-content: space-around;
+          }
+        }
+      }
+
+      &__socials {
+        padding: 1.5rem;
+        border-top: 1px solid $color-grey-3;
+        border-bottom: 1px solid $color-grey-3;
+        margin: 4rem 0 2rem 0;
+
+        @include respond(phone) {
+          text-align: center;
+        }
+      }
+
+      &__social {
+        font-size: $font-size-medium;
+        font-weight: bold;
+      }
+
+      &__media {
+        margin: 1rem 0;
+        display: inline-block;
+
+        margin-left: 1.2rem;
+
+        @include respond(phone) {
+          margin: 2rem 0;
+          margin-left: 2.5rem;
+        }
+      }
+
+      &__icn {
+        width: 4rem;
+        height: 4rem;
+
+        @include respond(phone) {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+
+      &__blue {
+        background: url('../../../../assets/img/components/Blog/blueBG.png')
+          no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        padding: 3rem 2rem 4rem 2rem;
+        color: $color-white;
+        @include flex-center;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 1rem;
+
+        @include respond(phone) {
+          background-position: center;
+        }
+      }
+
+      &__blueTitle {
+        font-size: $font-size-larger;
+
+        font-weight: bold;
+      }
+
+      &__blueText {
+        font-size: $font-size-normal;
+        margin: 4rem 0 5rem 0;
+      }
+
+      &__blueBtn {
+        border: none;
+        background-color: $color-white;
+        padding: 1.5rem 3rem;
+        color: $color-blue;
+        border-radius: 1rem;
+        font-size: $font-size-normal;
+        font-weight: bold;
+      }
+    }
+
+    .right {
+      &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 30rem));
+        justify-content: center;
+        grid-gap: 4rem;
+      }
+
+      &__image {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+
+        &:hover .right__more {
+          visibility: visible;
+
+          transform: translateX(0);
+        }
+      }
+
+      &__more {
+        height: 100%;
+        visibility: hidden;
+
+        transform: translateX(-100%);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include flex-center;
+        width: 100%;
+        background-color: rgba(255, 192, 203, 0.5);
+        font-size: $font-size-medium;
+        font-weight: bold;
+        color: $color-white;
+
+        transition: 0.2s ease-in-out;
+      }
+
+      &__iconarrow {
+        font-size: $font-size-medium;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      &__img {
+        width: 100%;
+        height: 20rem;
+        display: block;
+      }
+
+      &__bottom {
+        padding: 1rem 1.5rem 2rem 1.5rem;
+
+        display: flex;
+        flex-direction: column;
+        height: 24rem;
+
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+      }
+
+      &__smallname {
+        font-size: $font-size-small;
+        color: $color-blue;
+        text-transform: uppercase;
+      }
+
+      &__date {
+        color: $color-grey-4;
+      }
+
+      &__name {
+        font-size: $font-size-medium;
+        font-family: $font-primary-bold;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+      }
+
+      &__text {
+        font-size: $font-size-small;
+        display: flex;
+        // align-items: center;
+        flex-grow: 1;
+      }
+
+      &__button {
+        border: 1px solid $color-blue;
+        border-radius: 2rem;
+        background-color: transparent;
+        color: $color-blue;
+        padding: 0.6rem 2rem 0.4rem 2rem;
+        margin-top: 4rem;
+
+        &--icon {
+          vertical-align: middle;
+          font-size: $font-size-large;
+        }
+      }
+
+      &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: $font-size-small;
+        color: $color-grey-4;
+        flex-grow: 1;
+      }
+
+      &__time {
+        display: flex;
+        align-items: center;
+
+        color: $color-grey-2;
+      }
+
+      &__icon {
+        font-size: $font-size-normal;
+        margin-top: 2px;
+        margin-right: 5px;
+      }
+
+      &__line {
+        margin: 0 5px;
+      }
+
+      &__paginations {
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+
+        @include respond(phone) {
+          justify-content: center;
+        }
+      }
+
+      &__pagination {
+        width: 4rem;
+        height: 4rem;
+        background-color: $color-white;
+        border: 1px solid $color-grey-3;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $font-size-normal;
+        margin-left: 1rem;
+        cursor: pointer;
+
+        &:first-child {
+          margin-left: 3rem;
+
+          @include respond(phone) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes icnRotate {
+  30% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

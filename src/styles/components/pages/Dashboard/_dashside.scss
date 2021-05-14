@@ -1,0 +1,128 @@
+.dashSideNav {
+  width: 6rem;
+  min-height: 100vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.3s ease-in-out;
+
+  overflow-x: hidden;
+
+  background-color: $color-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  white-space: nowrap;
+
+  &__show {
+    overflow-x: hidden;
+    transition: 0.3s ease-in-out;
+
+    .dashSideNav__hamburger {
+      margin-right: 1rem;
+      margin-left: 0;
+    }
+  }
+
+  &__top {
+    height: $dash-nav-height;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 1px;
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+      background-color: $color-grey-1;
+
+      position: absolute;
+      bottom: 0;
+    }
+
+    // border-bottom: 1px solid $color-grey-3;
+  }
+
+  &__hamburger {
+    font-size: $font-size-large;
+    margin-right: 1rem;
+    margin-left: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  &__line {
+    width: 100%;
+    background-color: $color-grey-2;
+    height: 2px;
+
+    &--2 {
+      margin: 0.5rem 0;
+    }
+  }
+
+  &__img {
+    width: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__list {
+    margin-top: 3rem;
+  }
+
+  &__active {
+    border-left: 3px solid $color-blue;
+    color: $color-blue !important;
+    fill: $color-blue !important;
+
+    position: absolute;
+    left: 0;
+    height: 100%;
+  }
+
+  &__li {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-top: 0.8rem;
+    }
+
+    &:hover {
+      a,
+      .dashSideNav__icon {
+        color: $color-blue;
+        fill: $color-blue;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      padding: 0.7rem 2rem;
+      color: $color-black;
+      position: relative;
+    }
+  }
+
+  &__iconbody {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 100%;
+  }
+}

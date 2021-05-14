@@ -1,0 +1,103 @@
+.sec2 {
+  margin-top: 4rem;
+
+  &__title {
+    font-size: $font-size-extra-largest;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      line-height: 3rem;
+    }
+
+    &--break {
+      margin-top: 1rem;
+    }
+  }
+
+  &__left {
+    flex: 1.5;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+  }
+
+  .left {
+    &__mob {
+      width: 65%;
+
+      @include respond(tab-port) {
+        width: 80%;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .lesson {
+    width: 28rem;
+
+    &__line {
+      width: 100%;
+
+      &--line4 {
+        width: 90%;
+      }
+    }
+
+    &__button {
+      margin-top: 1rem;
+    }
+  }
+
+  .cards {
+    &__card {
+      &:hover {
+        box-shadow: unset;
+        .cards__icon {
+          background-color: $color-blue;
+        }
+
+        .cards__icn g {
+          fill: $color-white !important;
+        }
+
+        .cards__icn path {
+          fill: $color-white !important;
+        }
+      }
+    }
+
+    &__icon {
+      display: inline-table;
+      background-color: $color-grey-3;
+      width: 5rem;
+      height: 5rem;
+      position: relative;
+      border-radius: 1rem;
+    }
+
+    &__icn {
+      width: 2.2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &--1 g {
+        fill: $color-grey-2 !important ;
+      }
+
+      &--1 path {
+        stroke: $color-grey-2 !important;
+      }
+
+      path {
+        fill: unset !important;
+      }
+    }
+  }
+}

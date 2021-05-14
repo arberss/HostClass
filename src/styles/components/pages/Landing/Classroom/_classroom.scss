@@ -1,0 +1,56 @@
+.content {
+  position: relative;
+  margin-top: -$nav-height;
+  background-color: $color-grey-1;
+  overflow: hidden;
+
+  @include respond(tab-port) {
+    padding-bottom: 4rem;
+    // margin-top: 2rem;
+  }
+
+  // photo
+  &__photo {
+    background-image: url('../../../../../assets/img/components/Landing/classroom__image.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: calc(56vw - 7rem);
+    width: 101rem;
+    height: 67rem;
+    margin-left: auto;
+
+    @include respond(tab-port) {
+      max-width: 100%;
+      width: 100%;
+      height: 50rem;
+      background-position: center;
+    }
+  }
+}
+
+.classroom {
+  &__title {
+    margin-top: 12rem;
+
+    @include respond(tab-port) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 85%;
+
+    @include respond(phone) {
+      margin: 0 auto;
+    }
+  }
+
+  &__button {
+    width: 15rem;
+    align-self: flex-start;
+  }
+}

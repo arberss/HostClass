@@ -1,0 +1,30 @@
+.page {
+  padding: 1.5rem 0;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-grey-1;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  span {
+    margin-top: 2px;
+    font-size: $font-size-normal;
+    font-weight: bold;
+  }
+
+  &__inner {
+    color: $color-grey-6;
+    letter-spacing: 0.5px;
+  }
+
+  &__outer {
+    margin-left: 0.5rem;
+  }
+}

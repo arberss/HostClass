@@ -1,0 +1,171 @@
+.login {
+  position: relative;
+
+  // @include respond(tab-port) {
+  //   margin-top: -$nav-height;
+  // }
+
+  &__content {
+    justify-content: flex-end;
+    align-items: unset !important;
+
+    @include respond(tab-port) {
+      justify-content: center;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__img {
+    background-image: url('../../../../assets/img/components/Login/loginBg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    max-width: calc(56vw - 7rem);
+    width: 101rem;
+    height: 60rem;
+    margin-right: auto;
+
+    @include respond(tab-port) {
+      max-width: 100%;
+      width: 100%;
+      // margin-top: $nav-height;
+    }
+  }
+}
+
+.account {
+  &__content {
+    width: 90%;
+    padding-right: 5rem;
+    margin-top: 10rem;
+
+    @include respond(tab-port) {
+      width: 60%;
+      margin-top: 5rem;
+      padding-bottom: 4rem;
+    }
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+
+  &__title {
+    font-family: $font-primary-bold;
+    font-size: $font-size-extra-largest;
+    font-weight: normal;
+  }
+
+  &__text {
+    margin: 1.5rem 0;
+    font-size: $font-size-normal;
+  }
+
+  .form {
+    width: 100%;
+    margin-top: 3rem;
+
+    &__label {
+      color: $color-black;
+      font-family: $font-primary-bold;
+      font-size: $font-size-small;
+    }
+
+    &__input-content {
+      color: $color-grey-4;
+      position: relative;
+
+      &:not(:first-child) {
+        margin-top: 3rem;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      top: 52%;
+      left: 15px;
+      font-size: $font-size-large;
+
+      &--pass {
+        left: auto;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      padding: 1rem 3.4rem 1rem 4rem;
+      border: 1px solid $color-grey-3;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+      color: $color-grey-2;
+      font-size: $font-size-normal;
+
+      &::placeholder {
+        color: $color-grey-4;
+        font-family: $font-primary-regular;
+        font-size: $font-size-small;
+      }
+
+      &:focus {
+        border: 1px solid $color-blue;
+
+        + .form__icon {
+          color: $color-blue;
+        }
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+
+    &__account {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+
+    &__pass-forgot {
+      display: flex;
+      align-items: center;
+      font-size: $font-size-small;
+    }
+
+    &__icon-passforgot {
+      font-size: $font-size-normal;
+      color: $color-grey-4;
+    }
+
+    &__label-checkbox {
+      margin-left: 5px;
+    }
+
+    &__button {
+      width: 100%;
+      margin-top: 3rem;
+    }
+
+    &__remember {
+      font-size: $font-size-small;
+      display: flex;
+      align-items: center;
+      color: $color-grey-2;
+    }
+  }
+
+  &__register {
+    margin-top: 2rem;
+    font-size: $font-size-normal;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: $color-blue;
+    margin-left: 5px;
+  }
+}

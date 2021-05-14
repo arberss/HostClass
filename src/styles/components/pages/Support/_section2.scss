@@ -1,0 +1,47 @@
+.supportSec2 {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 23rem));
+    justify-content: center;
+    grid-gap: 6rem 3rem;
+  }
+
+  &__card {
+    height: 28rem;
+    padding: 4rem 2rem 3rem 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+  }
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__title {
+    padding: 2rem 0;
+    font-size: $font-size-medium;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+
+  &__text {
+    font-size: $font-size-small;
+    flex-grow: 1;
+  }
+}
+
+.supportSec3 {
+  background: none;
+}

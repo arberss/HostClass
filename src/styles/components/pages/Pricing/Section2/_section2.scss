@@ -1,0 +1,19 @@
+.pricingSec2 {
+  padding: 6rem 0;
+
+  .plans {
+
+    &__badge {
+      margin: 0;
+    }
+
+    &__for {
+      font-size: $font-size-normal;
+      color: $color-blue;
+    }
+
+    &__price {
+      margin-top: 2rem;
+    }
+  }
+}

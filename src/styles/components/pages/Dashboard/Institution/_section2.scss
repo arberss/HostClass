@@ -1,0 +1,137 @@
+.instSec2 {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 34rem;
+  }
+
+  &__left {
+    padding: 5.5rem 0 0 5rem;
+  }
+
+  &__title {
+    font-size: $font-size-large;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: $color-grey-3;
+      display: block;
+      margin-top: 1.2rem;
+    }
+  }
+
+  &__bottom {
+    padding: 2rem 4rem 2rem 0;
+  }
+
+  &__fl {
+    display: flex;
+  }
+
+  &__img1box {
+    flex: 1;
+  }
+
+  &__img1 {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__list {
+    flex: 1;
+  }
+
+  &__li {
+    border: 1px solid $color-grey-3;
+    padding: 0.8rem 1rem;
+    font-size: $font-size-normal;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-top: 1.4rem;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-blue;
+
+      .instSec2__icnli {
+        color: $color-white;
+        fill: $color-white;
+      }
+    }
+  }
+
+  &__icnli {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+
+    color: $color-black;
+    fill: $color-black;
+  }
+
+  &__title2 {
+    margin-top: 4rem;
+    font-size: $font-size-medium;
+  }
+
+  &__table {
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 1.5rem;
+    font-size: $font-size-small;
+
+    thead {
+      background-color: $color-grey-3;
+      text-align: left;
+
+      tr {
+        th {
+          padding: 1rem 0;
+        }
+
+        .th {
+          &--1 {
+            width: 10%;
+          }
+
+          &--2 {
+            width: 20%;
+          }
+
+          &--3 {
+            width: 40%;
+          }
+
+          &--2 {
+            width: 30%;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 1rem 0;
+          border-bottom: 1px solid $color-grey-3;
+        }
+
+        .td {
+          &--id {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

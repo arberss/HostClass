@@ -1,0 +1,88 @@
+.section5 {
+  background-color: rgb(229, 229, 248);
+  position: relative;
+
+  &__image {
+    background-image: url('../../../../../assets/img/components/Features/photo2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: calc(56vw - 10rem);
+    width: 100%;
+    height: 67rem;
+    margin-right: auto;
+
+    @include respond(tab-port) {
+      max-width: 100%;
+    }
+  }
+
+  .right {
+    padding-right: 5rem;
+
+    @include respond(tab-port) {
+      padding: 4rem 0;
+    }
+
+    &__title {
+      width: 75%;
+      margin: 0 auto;
+      font-size: $font-size-largest;
+      font-family: $font-primary-regular;
+      font-weight: bold;
+      letter-spacing: normal;
+    }
+
+    &__text {
+      font-size: $font-size-normal;
+      margin-top: 6rem;
+
+      @include respond(phone) {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 3rem;
+      }
+    }
+
+    &__txt {
+      font-size: $font-size-small;
+    }
+
+    &__icon {
+      padding: 1.5rem;
+      width: 10rem;
+      height: 6.5rem;
+      background-color: $color-white;
+      border-radius: 1rem;
+      margin-right: 1.5rem;
+    }
+
+    &__data {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5rem;
+      margin-top: 4rem;
+
+      @include respond(phone) {
+        grid-template-columns: 0.8fr;
+        justify-content: center;
+      }
+    }
+
+    &__card {
+      display: flex;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0.4rem 0;
+    }
+
+    &__top {
+      font-size: $font-size-normal;
+      font-weight: bold;
+    }
+  }
+}

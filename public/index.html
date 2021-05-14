@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <link rel="icon" type="image/png/ico/svg" href="./icon-lg.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>HostClass Website</title>
+
+    <style>
+      .loader {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .item {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+      }
+
+      .item-1 {
+        background-color: #fa5667;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        animation: item-1_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+      }
+
+      .item-2 {
+        background-color: #7a45e5;
+        top: 0;
+        right: 0;
+        animation: item-2_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+      }
+
+      .item-3 {
+        background-color: #1b91f7;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        animation: item-3_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+      }
+
+      .item-4 {
+        background-color: #fac24c;
+        bottom: 0;
+        left: 0;
+        animation: item-4_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+      }
+
+      @keyframes item-1_move {
+        0%,
+        100% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(0, 100px);
+        }
+        50% {
+          transform: translate(100px, 100px);
+        }
+        75% {
+          transform: translate(100px, 0);
+        }
+      }
+
+      @keyframes item-2_move {
+        0%,
+        100% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(-100px, 0);
+        }
+        50% {
+          transform: translate(-100px, 100px);
+        }
+        75% {
+          transform: translate(0, 100px);
+        }
+      }
+
+      @keyframes item-3_move {
+        0%,
+        100% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(0, -100px);
+        }
+        50% {
+          transform: translate(-100px, -100px);
+        }
+        75% {
+          transform: translate(-100px, 0);
+        }
+      }
+
+      @keyframes item-4_move {
+        0%,
+        100% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(100px, 0);
+        }
+        50% {
+          transform: translate(100px, -100px);
+        }
+        75% {
+          transform: translate(0, -100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="loader">
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+        <div class="item item-4"></div>
+      </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

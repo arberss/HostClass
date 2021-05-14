@@ -1,0 +1,256 @@
+.signup {
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    display: flex;
+
+    @include respond(tab-port) {
+      position: static;
+      justify-content: center;
+    }
+  }
+
+  &__padding {
+    padding-right: 50%;
+
+    @include respond(tab-port) {
+      padding-right: 0;
+    }
+  }
+
+  .features {
+    max-width: calc(56vw - 7rem);
+    width: 101rem;
+    height: 67rem;
+    margin-left: auto;
+
+    @include respond(tab-port) {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+
+    @include respond(phone) {
+      height: 100%;
+    }
+  }
+
+  &__input {
+    &:not(:first-child) {
+      margin-top: 2rem !important;
+    }
+  }
+
+  &__login {
+    margin-top: 1.2rem;
+  }
+
+  &__policy {
+    display: flex;
+    margin-top: 2.5rem;
+  }
+
+  &__checkbox {
+    color: $color-black;
+    font-size: $font-size-small;
+  }
+
+  &__link {
+    color: $color-blue;
+  }
+
+  &__button {
+    margin-top: 1.5rem !important;
+  }
+
+  &__line {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    font-size: $font-size-normal;
+  }
+
+  &__hr {
+    width: 100%;
+    height: 1px;
+    background-color: $color-grey-3;
+  }
+
+  &__or {
+    padding: 0 2rem;
+  }
+
+  &__googlebtn {
+    width: 100%;
+    @include flex-center;
+    color: $color-black;
+    background-color: transparent;
+    border: 1px solid $color-grey-3;
+    margin-bottom: 5rem;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .features {
+    flex: 1;
+    background: url('../../../../assets/img/components/Signup/featuresbg.webp')
+      no-repeat;
+    background-size: cover;
+    padding: 5rem 0 6rem 0;
+    overflow: hidden;
+    position: relative;
+
+    @include respond(phone) {
+      padding: 2rem 0;
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      clip-path: polygon(9.8% 0%, 100% 0, 100% 100%, 0% 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__content {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      margin-left: 10rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+
+      position: relative;
+      z-index: 5;
+
+      @include respond(phone) {
+        margin-left: 6rem;
+      }
+    }
+
+    &__title {
+      color: $color-white;
+      font-family: $font-primary-bold;
+      font-size: $font-size-extra-larger;
+      letter-spacing: 1px;
+    }
+  }
+
+  .slide {
+    width: 100%;
+    text-align: center;
+    padding-top: 8rem;
+    margin-bottom: 10rem;
+
+    /* slide lib */
+    .slick-track {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .slick-slide {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slick-arrow {
+      display: flex !important;
+      font-size: $font-size-medium;
+      color: $color-white;
+      position: absolute;
+      bottom: 0;
+      transform: translate(-50%, 0);
+      cursor: pointer;
+    }
+
+    .slick-prev {
+      left: 42%;
+
+      @include respond(tab-land) {
+        bottom: 5%;
+      }
+    }
+
+    .slick-next {
+      left: 58%;
+
+      @include respond(tab-land) {
+        bottom: 5%;
+      }
+    }
+
+    /* dots */
+    .slick-dots {
+      display: flex !important;
+      position: absolute;
+      bottom: 0.5rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .slick-dots li {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+
+    .slick-dots li button {
+      border: none;
+      background-color: $color-grey-6;
+      font-size: 0;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+    }
+
+    .slick-dots li.slick-active button {
+      background-color: $color-white;
+    }
+
+    /* slide lib */
+
+    &__body {
+      width: 21rem !important;
+      padding: 1rem;
+      background-color: $color-grey-6;
+      border-radius: 1rem;
+      text-align: center;
+
+      &:hover {
+        background-color: $color-grey-2;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__img {
+      width: 4rem;
+      margin: 1.5rem 0;
+    }
+
+    &__title {
+      color: $color-white;
+      font-size: $font-size-large;
+      margin: 0;
+    }
+  }
+}

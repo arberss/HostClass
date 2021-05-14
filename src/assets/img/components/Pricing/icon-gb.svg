@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.449" height="31.266" viewBox="0 0 23.449 31.266">
+  <g id="Group_2617" data-name="Group 2617" transform="translate(-135.518 -2229.734)">
+    <path id="Icon_awesome-file" data-name="Icon awesome-file" d="M13.679,8.3V0H1.466A1.462,1.462,0,0,0,0,1.466V29.8a1.462,1.462,0,0,0,1.466,1.466H21.984A1.462,1.462,0,0,0,23.449,29.8V9.771h-8.3A1.47,1.47,0,0,1,13.679,8.3Zm9.771-.861v.373H15.633V0h.372a1.464,1.464,0,0,1,1.038.427l5.978,5.984A1.461,1.461,0,0,1,23.449,7.444Z" transform="translate(135.518 2229.734)" fill="#4480ff"/>
+    <text id="GB" transform="translate(140 2252)" fill="#fff" font-size="11" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">GB</tspan></text>
+  </g>
+</svg>

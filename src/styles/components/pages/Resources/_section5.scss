@@ -1,0 +1,13 @@
+.resourcesSec5 {
+  &__bottom {
+    height: 30rem;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    color: $color-blue;
+  }
+}

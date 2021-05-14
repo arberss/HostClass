@@ -1,0 +1,41 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/global';
+@import 'base/rest';
+@import 'base/theme';
+@import 'base/typography';
+@import 'base/utilities';
+
+// pages
+@import 'components/pages/Landing/index';
+@import 'components/pages/Features/index';
+@import 'components/pages/Pricing/index';
+@import 'components/pages/Support/index';
+@import 'components/pages/Resources/index';
+@import 'components/pages/Blog/index';
+
+// shared pages
+@import 'components/shared/nav';
+@import 'components/shared/subscribe';
+@import 'components/shared/footer';
+@import 'components/shared/mobileModels';
+@import 'components/shared/linkpage';
+@import 'components/shared/mobileNav';
+@import 'components/shared/toTop';
+@import 'components/shared/teamslide';
+@import 'components/shared/smallbanner';
+
+// footer links
+@import 'components/pages/About/index';
+@import 'components/pages/Partners/index';
+
+// login page
+@import 'components/pages/Login/login';
+@import 'components/pages/Signup/signup';
+
+// layout
+@import '../layouts/layoutPhotoRight';
+
+//dashboard
+@import 'components/pages/Dashboard/index';

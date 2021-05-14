@@ -1,0 +1,350 @@
+.mobileModel {
+  width: 18rem;
+  display: inline-block;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+
+    width: 100%;
+    text-align: center;
+  }
+
+  &__mob {
+    width: 100%;
+  }
+
+  &__screensize {
+    display: block;
+    width: 13.8rem;
+
+    position: absolute;
+    top: 1.6rem;
+    left: 2.14rem;
+  }
+
+  &__screen {
+    width: 100%;
+  }
+
+  &__top {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+
+    font-size: 0.6rem;
+
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.mobileModel1 {
+  &__name {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: -1rem;
+  }
+
+  &__img {
+    margin-top: 2rem;
+  }
+
+  &__time {
+    font-size: 0.8rem;
+    color: $color-orange-2;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+  }
+
+  &__iconbody {
+    background-color: $color-grey-1;
+    padding: 0.8rem 1rem;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    width: 0.8rem;
+    height: auto;
+  }
+
+  &__callbody {
+    display: inline-block;
+    margin-top: 2.2rem;
+    padding: 0.6rem 0.8rem;
+    background-color: $color-orange-1;
+    border-radius: 50%;
+  }
+
+  &__callicon {
+    color: $color-white;
+    font-size: 1.2rem;
+  }
+}
+
+// mobileModel2
+
+.mobileModel2 {
+  &__icon {
+    color: $color-white;
+  }
+
+  &__clock {
+    color: $color-white;
+  }
+
+  &__banner {
+    @include flex-center;
+    color: $color-white;
+    margin: 1.5rem 0 0.8rem 0;
+
+    &--icon {
+      fill: $color-grey-2;
+      width: 1.5rem;
+      height: auto;
+      margin-right: 3px;
+    }
+
+    &--text {
+      font-size: $font-size-normal;
+    }
+  }
+
+  &__grid {
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    @include respond(tab-port) {
+      grid-gap: 0.6rem 1rem;
+    }
+  }
+
+  &__box {
+    margin-top: 0.4rem;
+  }
+
+  &__menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-black-2;
+    padding: 0.1rem;
+
+    &--icon {
+      width: 9px;
+    }
+
+    &--name {
+      font-size: 4px;
+      margin: 0 3px;
+      color: $color-white;
+    }
+  }
+
+  &__creds {
+    width: 2.2rem;
+    height: 2.3rem;
+    font-size: 8px;
+    padding: 0.5rem;
+    background-color: $color-grey-1;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+
+    &--dark {
+      background-color: $color-grey-6;
+    }
+  }
+}
+
+.mobileModel3 {
+  &__screensize {
+    top: 3.5rem;
+  }
+
+  &__content {
+    top: 49%;
+
+    @include respond(tab-port) {
+      top: 46%;
+    }
+  }
+
+  &__top {
+    top: -1.5rem;
+    color: $color-white;
+  }
+
+  &__card {
+    width: 92%;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: $color-grey-1;
+    border-radius: 3px;
+  }
+
+  &__topinfo {
+    display: flex;
+    align-items: center;
+
+    &--icon {
+      font-size: 8px;
+      color: $color-grey-2;
+      margin-right: 2px;
+    }
+
+    &--infotext {
+      font-size: 6px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 5px;
+    }
+
+    &--text {
+      color: $color-grey-4;
+      margin-bottom: 3px;
+    }
+
+    &--copyicon {
+      color: $color-grey-2;
+    }
+  }
+
+  &__layouts {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2rem 0 0.5rem 0;
+  }
+
+  &__layout {
+    width: 2.5rem;
+    padding: 2px 0;
+    background-color: $color-grey-3;
+    border-radius: 2px;
+
+    &--last {
+      background-color: $color-grey-2;
+    }
+
+    &--lastname {
+      color: $color-white;
+    }
+
+    &--icon {
+      width: 8px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &--name {
+      font-size: 5px;
+    }
+  }
+
+  &__captions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 0.3rem 0;
+    border-top: 0.5px solid $color-grey-3;
+  }
+
+  &__on {
+    width: 2.5rem;
+    height: 1.2rem;
+    background-color: $color-grey-4;
+    border-radius: 1rem;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: $color-white;
+
+      position: absolute;
+      top: 1px;
+      left: 1.7px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+
+    background-color: $color-grey-1;
+    margin-top: 2px;
+    padding: 0.8px 0.9px;
+
+    &--body {
+      padding: 1px 7.6px;
+      margin: 0 0.5px;
+
+      @include respond(tab-port) {
+        padding: 1px 4.6px;
+      }
+    }
+
+    &--icon {
+      font-size: 9px;
+    }
+
+    &--icon1 {
+      color: $color-grey-4;
+    }
+
+    &--icon2 {
+      color: $color-grey-2;
+    }
+    &--icon3 {
+      color: $color-white;
+    }
+
+    &--body1 {
+      background-color: $color-grey-2;
+    }
+
+    &--body2 {
+      background-color: $color-grey-7;
+    }
+
+    &--body3 {
+      background-color: $color-orange-1;
+      border-radius: 2rem;
+    }
+    &--body4 {
+      background-color: $color-grey-7;
+      display: flex;
+      align-items: center;
+      padding: 1px;
+    }
+  }
+}

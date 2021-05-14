@@ -1,0 +1,230 @@
+.companies {
+  position: relative;
+
+  .universites {
+    margin-bottom: 12rem;
+  }
+}
+
+.onlineAfter {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -15%;
+    width: 40%;
+    height: 100%;
+    background: url('../../../../../assets/img/components/Landing/square.webp')
+      no-repeat 100% 100%;
+    z-index: -1;
+  }
+}
+
+.online {
+  display: flex;
+
+  @include respond(tab-port) {
+    display: block;
+    padding-bottom: 4rem;
+  }
+
+  &__title {
+    font-size: $font-size-largest;
+    margin-bottom: 5rem;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    margin-top: 5rem;
+    position: relative;
+    height: 100%;
+
+    &--img {
+      display: block;
+      margin: 0 auto;
+      // margin-left: auto;
+      max-width: 40rem;
+      width: 100%;
+
+      @include respond(tab-port) {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.cards {
+  flex: 1;
+  margin-right: 2rem;
+
+  &__card {
+    max-width: 52rem;
+    width: 100%;
+
+    margin-top: 2.5rem;
+    display: flex;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    background-color: $color-white;
+
+    @include respond(tab-port) {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &:hover {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      .cards__icon path {
+        fill: $color-blue;
+      }
+
+      .cards__title {
+        color: $color-blue;
+      }
+    }
+  }
+
+  &__icon {
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.5rem;
+  }
+
+  &__icn path {
+    fill: $color-black;
+  }
+
+  &__title {
+    font-family: $font-primary-bold;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &__text {
+    margin-top: 0.8rem;
+    font-size: $font-size-normal;
+    line-height: 2rem;
+    font-weight: normal;
+    flex-grow: 1;
+  }
+}
+
+// image new lesson card
+.lesson {
+  display: block;
+  max-width: 30rem;
+  width: 100%;
+  background-color: $color-white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -8rem;
+  // right: -5rem;
+  right: 6rem;
+
+  @include respond(tab-port) {
+    left: 40%;
+  }
+
+  @include respond(phone) {
+    left: 25%;
+    bottom: -4rem;
+  }
+
+  &__lines {
+  }
+
+  &__line {
+    background-color: $color-grey-3;
+    height: 0.7rem;
+    margin-top: 0.6rem;
+
+    &--line1 {
+      width: 8rem;
+      margin: 0;
+    }
+
+    &--line2 {
+      width: 6rem;
+    }
+
+    &--line3 {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+
+    &--line4 {
+      width: 65%;
+    }
+    &--line5 {
+      width: 90%;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem 0 1rem;
+
+    &--img {
+      width: 5rem;
+    }
+  }
+
+  &__hr {
+    width: 100%;
+    height: 1px;
+    background-color: $color-grey-3;
+  }
+
+  &__bottom {
+    padding: 1rem 2rem 2rem 2rem;
+    font-size: $font-size-normal;
+
+    &--title {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__button {
+    width: 6rem;
+    background-color: $color-black;
+    color: $color-white;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: $font-size-extra-small;
+    font-family: $font-primary-regular;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+  }
+}
+// image new lesson card
+
+.universites {
+  padding: 2rem 0;
+
+  &__title {
+    color: $color-grey-2;
+  }
+
+  &__img {
+    max-width: 100%;
+    margin-top: 1rem;
+
+    display: flex;
+    margin: 0 auto;
+  }
+}

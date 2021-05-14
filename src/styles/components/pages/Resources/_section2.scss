@@ -1,0 +1,20 @@
+.resourcesSec2 {
+  background: none;
+  background-attachment: scroll;
+
+  &::after {
+    display: none;
+  }
+
+  &__font {
+    color: $color-black;
+  }
+
+  &__text {
+    font-size: $font-size-normal;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+}

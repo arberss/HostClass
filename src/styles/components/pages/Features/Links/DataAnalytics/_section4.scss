@@ -1,0 +1,90 @@
+.enhanceStudent {
+  &__title {
+    font-family: $font-primary-bold;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    width: 30rem;
+    margin-top: 4rem;
+
+    @include respond(tab-port) {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      transform: scale(1.02) !important;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &__bottom {
+    padding: 1rem 1.5rem 2rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    height: 24rem;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  &__topinfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: $font-size-normal;
+  }
+
+  &__smallname {
+    color: $color-blue;
+  }
+
+  &__date {
+    color: $color-grey-4;
+  }
+
+  &__name {
+    width: 85%;
+    font-size: $font-size-large;
+    font-family: $font-primary-bold;
+    margin: 1rem 0 1.5rem 0;
+    // flex-grow: 1;
+  }
+
+  &__text {
+    font-size: $font-size-small;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &__button {
+    border: 1px solid $color-blue;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: $color-blue;
+    padding: 0.6rem 2rem 0.4rem 2rem;
+    margin-top: 4rem;
+
+    &--icon {
+      vertical-align: middle;
+      font-size: $font-size-large;
+    }
+  }
+}

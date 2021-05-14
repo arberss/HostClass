@@ -1,0 +1,16 @@
+.featuresSecuritySec3 {
+  padding-bottom: 8rem;
+
+  &__title {
+    margin-left: 8rem;
+    color: $color-black;
+
+    @include respond(phone) {
+      margin-left: 0;
+    }
+  }
+
+  .resources {
+    justify-content: center;
+  }
+}

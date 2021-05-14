@@ -1,0 +1,367 @@
+.nav {
+  width: 100%;
+  height: $nav-height;
+  @include flex-center;
+  box-shadow: rgba(85, 84, 84, 0.16) 0px 1px 3px,
+    rgba(141, 137, 137, 0.23) 0px 1px 3px;
+  background-color: $color-white;
+
+  position: relative;
+  z-index: 10;
+
+  .container {
+    @include respond(tab-land) {
+      padding: 0 1.5rem 0 4rem;
+    }
+
+    @include respond(phone) {
+      padding: 0 1rem;
+    }
+  }
+
+  &__activeLink {
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 50%;
+      height: 2px;
+      display: inline-block;
+      background-color: $color-blue;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 3;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 14rem;
+  }
+
+  &__menu {
+    display: flex;
+    position: relative;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__list {
+    font-size: $font-size-normal;
+    font-weight: 600;
+    height: 4.5rem;
+    @include flex-center;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+
+      @include respond(tab-land) {
+        margin-right: 2rem;
+      }
+    }
+
+    a {
+      color: $color-black;
+      letter-spacing: 0.5px;
+      padding-bottom: 0.5rem;
+
+      &:active,
+      &:focus {
+        color: $color-black;
+      }
+    }
+
+    &--d-arrow {
+      vertical-align: middle;
+
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-small;
+
+    &--login {
+      margin-right: 0.5rem;
+      padding: 1rem 2.5rem;
+      border: 1px solid $color-white;
+      border-radius: 5px;
+      transition: 0.4s ease-in-out;
+
+      @include respond(tab-land) {
+        padding: 1rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: $font-size-normal;
+      }
+
+      &:hover {
+        border: 1px solid $color-blue;
+      }
+    }
+
+    &--signup {
+      padding: 1rem 2.5rem;
+
+      @include respond(tab-land) {
+        padding: 1rem 2rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: $font-size-normal;
+      }
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 90%;
+    left: 61%;
+    transform: translate(-50%, 0);
+    padding: 1.5rem 3rem;
+    background-color: $color-white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+    border-radius: 1rem;
+    cursor: default;
+    display: none;
+
+    &--features {
+      width: 65rem;
+
+      &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 0.8rem solid transparent;
+        border-right: 0.8rem solid transparent;
+        border-bottom: 1.5rem solid $color-grey-1;
+
+        position: absolute;
+        top: -1.5rem;
+        left: 18%;
+        z-index: 2;
+      }
+    }
+
+    &--resources {
+      width: 55rem;
+
+      &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 0.8rem solid transparent;
+        border-right: 0.8rem solid transparent;
+        border-bottom: 1.5rem solid $color-grey-1;
+
+        position: absolute;
+        top: -1.6rem;
+        right: 36%;
+        z-index: 2;
+      }
+    }
+
+    &__name {
+      color: $color-grey-4;
+      font-weight: normal;
+      font-size: $font-size-small;
+      text-transform: uppercase;
+    }
+
+    &__data {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+
+      margin-top: 1rem;
+    }
+
+    &__link {
+      width: 100%;
+      height: 6rem;
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      cursor: default;
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover .dropdown__icn {
+        background-color: $color-blue-4;
+        transition: 0.4s ease-in-out;
+      }
+
+      &:hover .dropdown__icn--first {
+        background-color: $color-blue-4;
+      }
+      &:hover .dropdown__icn--second {
+        background-color: $color-yellow-3;
+      }
+    }
+
+    &__icn {
+      border-radius: 50%;
+      position: relative;
+
+      &::after {
+        content: '';
+        border: 1px solid $color-grey-3;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: transparent;
+
+        position: absolute;
+        top: 0;
+      }
+    }
+
+    &__icon {
+      width: 4.5rem;
+      height: 100%;
+      padding: 1rem 1.2rem;
+    }
+
+    &__info {
+      margin-left: 1rem;
+    }
+
+    &__title {
+      font-size: $font-size-small;
+    }
+
+    &__text {
+      font-size: $font-size-extra-small;
+      font-weight: normal;
+      margin-top: 0.5rem;
+      letter-spacing: normal;
+    }
+  }
+
+  .nav__list:hover .dropdown {
+    display: block;
+  }
+
+  .nav__list:hover .nav__list--d-arrow {
+    transform: rotate(-180deg);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+// dropdownmobile
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+
+  @include respond(tab-port) {
+    display: flex;
+  }
+
+  &__line {
+    width: 100%;
+    height: 2px;
+    background-color: $color-black;
+    transition: all 0.4s ease-out;
+
+    &--two {
+      margin: 3px 0;
+
+      animation: 0.5s addLine forwards;
+    }
+  }
+}
+
+.hambClicked {
+  @include respond(tab-port) {
+    position: relative;
+    z-index: 8001;
+  }
+
+  .hamburger__line {
+    background-color: $color-white;
+  }
+
+  .hamburger__line--two {
+    animation: 0.4s removeLine forwards;
+  }
+
+  .hamburger__line--one {
+    transform: rotate(45deg) translate(5.5px, 4px);
+  }
+
+  .hamburger__line--three {
+    transform: rotate(-45deg) translateY(-1.5px) translateX(2.3px);
+  }
+}
+
+.navDesktopActive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  transition: all 1s ease-in-out;
+}
+
+@keyframes removeLine {
+  0% {
+    transform: translateX(0);
+  }
+
+  30% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(110%);
+    display: none;
+  }
+}
+
+@keyframes addLine {
+  0% {
+    transform: translateX(110%);
+    display: none;
+  }
+
+  30% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

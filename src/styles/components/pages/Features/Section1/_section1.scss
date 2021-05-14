@@ -1,0 +1,29 @@
+.section1 {
+  margin-top: -$nav-height;
+
+  position: relative;
+
+  &__img {
+    background-image: url('../../../../../assets/img/components/Features/firstImg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: calc(56vw - 7rem);
+    width: 101rem;
+    height: 55rem;
+    margin-left: auto;
+
+    @include respond(tab-port) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-extra-largest;
+  }
+
+  &__image {
+    flex: 1;
+  }
+}

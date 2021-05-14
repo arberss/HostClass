@@ -1,0 +1,44 @@
+.multipleDevicesSec2 {
+  padding-bottom: 6rem;
+
+  &__title {
+    text-align: center;
+    font-size: $font-size-large;
+    color: $color-grey-2;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 13rem));
+    grid-gap: 4rem 6rem;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  &__box {
+    padding: 4rem 0 3rem 0;
+    @include flex-center;
+    flex-direction: column;
+    color: $color-grey-2;
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 5px 0px;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    &--active {
+      color: $color-blue;
+    }
+  }
+
+  &__icon {
+    font-size: 3.5rem;
+  }
+
+  &__mark {
+    font-size: $font-size-medium;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+}

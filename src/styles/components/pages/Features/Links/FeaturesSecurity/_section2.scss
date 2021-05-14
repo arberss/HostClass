@@ -1,0 +1,8 @@
+.featuresSecuritySec2 {
+  position: relative;
+  padding-top: 12rem;
+
+  @include respond(phone) {
+    padding-bottom: 6rem;
+  }
+}

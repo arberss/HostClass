@@ -1,0 +1,30 @@
+.aboutSec2 {
+  padding-top: 16rem;
+
+  &__img {
+    width: 100%;
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-medium;
+  }
+
+  &__reverse {
+    padding-bottom: 10rem;
+    flex-direction: row-reverse;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__img2 {
+    @include respond(tab-port) {
+      width: 80%;
+    }
+  }
+}
